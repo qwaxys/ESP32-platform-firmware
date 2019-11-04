@@ -30,4 +30,9 @@ menu "Driver: ILI9341 LCD display"
 		depends on DRIVER_ILI9341_ENABLE
 		bool "Swap red and blue"
 		default n
+	
+	config ILI9341_8BIT
+		depends on DRIVER_ILI9341_ENABLE
+		bool "Reduce color depth to 8bpp"
+		default n
 endmenu
